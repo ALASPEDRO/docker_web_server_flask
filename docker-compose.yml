@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+    web:
+        image: my_webflask
+        container_name: web_flask
+        build: .
+        ports:
+        - "5000:5000"
+        network_mode: "host"
+
